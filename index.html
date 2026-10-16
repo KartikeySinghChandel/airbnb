@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VILLA SOLARIA — Private Clifftop Residence & Ocean Sanctuary</title>
+  <meta name="description" content="Villa Solaria is a private 4-bedroom architectural clifftop estate perched 300ft above the ocean with private 20m heated infinity pool, games lounge, private chef, and panoramic sea suites." />
+  
+  <!-- Custom Architectural Monogram Favicon (No generic or gemini icon) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%2308090a'/%3E%3Cpath d='M10 9 L16 23 L22 9' fill='none' stroke='%23c7a77b' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='16' cy='7' r='1.2' fill='%23e4cbb0'/%3E%3C/svg%3E" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/src/style.css" />
+</head>
+<body class="minimal-dark">
+
+  <!-- Architectural Floating Header -->
+  <header class="site-header" id="header">
+    <div class="header-inner">
+      <a href="#shot1-section" class="brand-logo" aria-label="Villa Solaria Homepage">
+        <span class="logo-title">VILLA SOLARIA</span>
+        <span class="logo-coord">15°29'N 73°46'E · CLIFFTOP RESIDENCE · 300FT</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <a href="#shot1-section" class="nav-link"><span class="nl-num">01</span>Descent</a>
+        <a href="#shot2-section" class="nav-link"><span class="nl-num">02</span>Arrival</a>
+        <a href="#services" class="nav-link"><span class="nl-num">03</span>Services</a>
+        <a href="#spaces" class="nav-link"><span class="nl-num">04</span>The Estate</a>
+        <a href="#specs" class="nav-link"><span class="nl-num">05</span>Specifications</a>
+        <a href="#inquire" class="nav-link"><span class="nl-num">06</span>Rates & Booking</a>
+      </nav>
+
+      <div class="header-cta">
+        <div class="header-status-badge">
+          <span class="status-live-dot"></span>
+          <span class="status-live-text">2026 INQUIRIES OPEN</span>
+        </div>
+        <a href="#inquire" class="btn-book">
+          <span>CHECK AVAILABILITY</span>
+        </a>
+        <button class="mobile-toggle" id="menu-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <div class="brand-logo">
+        <span class="drawer-brand">VILLA SOLARIA</span>
+        <span class="logo-coord">PRIVATE RESIDENCE RESERVATIONS</span>
+      </div>
+      <button class="drawer-close" id="drawer-close">✕</button>
+    </div>
+    <div class="drawer-links">
+      <a href="#shot1-section" class="drawer-link">01. Shot 01: Exterior Descent</a>
+      <a href="#shot2-section" class="drawer-link">02. Shot 02: Suite Arrival</a>
+      <a href="#services" class="drawer-link">03. Curated Services & Dining</a>
+      <a href="#spaces" class="drawer-link">04. The Estate Spaces</a>
+      <a href="#specs" class="drawer-link">05. Full Specifications</a>
+      <a href="#gallery" class="drawer-link">06. Visual Archive</a>
+      <a href="#inquire" class="drawer-link highlight">07. Reserve & Rates</a>
+    </div>
+    <div class="drawer-footer">
+      <p>PRIVATE RESIDENCE RESERVATIONS</p>
+      <p>+1 (800) 492-7100 · INQUIRIES@VILLASOLARIA.COM</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- ============================================================== -->
+    <!-- SCENE 1: SHOT 01 — AERIAL CLIFTON DESCENT (300 FRAMES SCROLL)  -->
+    <!-- Pinned during scroll until all 300 frames scrub to completion   -->
+    <!-- Only after Scene 1 finishes does Scene 2 underneath appear     -->
+    <!-- ============================================================== -->
+    <section class="shot-track" id="shot1-section">
+      <div class="shot-sticky" id="shot1-sticky">
+        <canvas id="shot1-canvas" class="shot-canvas" width="1920" height="1080"></canvas>
+        <div class="canvas-vignette"></div>
+
+        <!-- Overlays for Shot 1 -->
+        <div class="story-overlay overlay-stage-1" id="shot1-overlay-1">
+          <div class="pill-tag">SCENE 01 · AERIAL DESCENT</div>
+          <h1 class="hero-title">
+            PERCHED ABOVE<br>
+            <span class="text-gradient">THE HORIZON</span>
+          </h1>
+          <p class="hero-desc">
+            A private 4-bedroom architectural clifftop estate standing 300 feet above the crashing surf. Pure isolation, endless ocean, and complete architectural clarity.
+          </p>
+          <div class="scroll-cue">
+            <span class="scroll-line"></span>
+            <span class="scroll-label">SCROLL DOWN TO SCRUB AERIAL DESCENT</span>
+          </div>
+        </div>
+
+        <div class="story-overlay overlay-stage-2" id="shot1-overlay-2">
+          <div class="info-panel">
+            <span class="panel-num">01 / EXTERIOR APPROACH</span>
+            <h2 class="panel-title">Isolated Coastal Promontory</h2>
+            <p class="panel-body">
+              Descending through the protected emerald hillside. The compound sits on an ancient sea cliff directly oriented towards open Pacific sunsets.
+            </p>
+            <div class="metric-row">
+              <div class="metric-item">
+                <span class="metric-val">300<small>FT</small></span>
+                <span class="metric-sub">Elevation</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">100%</span>
+                <span class="metric-sub">Ocean Facing</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">4.5</span>
+                <span class="metric-sub">Acres</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-overlay overlay-stage-3" id="shot1-overlay-3">
+          <div class="info-panel align-right">
+            <span class="panel-num">01 / DUSK ON THE CLIFF</span>
+            <h2 class="panel-title">The Infinity Water at Dusk</h2>
+            <p class="panel-body">
+              Arriving at the illuminated cantilevered pool as twilight deepens. Continue scrolling down to transition directly into Shot 02.
+            </p>
+            <div class="metric-row">
+              <div class="metric-item">
+                <span class="metric-val">20<small>M</small></span>
+                <span class="metric-sub">Pool Length</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">SCENE 01</span>
+                <span class="metric-sub">Complete ↓</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 2: SHOT 02 — POOL TO SUITE GLIDE (300 FRAMES)          -->
+    <!-- Positioned directly below Shot 1 (Upar Niche)                  -->
+    <!-- Pinned during scroll until all 300 frames finish               -->
+    <!-- ============================================================== -->
+    <section class="shot-track" id="shot2-section">
+      <div class="shot-sticky" id="shot2-sticky">
+        <canvas id="shot2-canvas" class="shot-canvas" width="1920" height="1080"></canvas>
+        <div class="canvas-vignette"></div>
+
+        <!-- Overlays for Shot 2 -->
+        <div class="story-overlay overlay-stage-1" id="shot2-overlay-1">
+          <div class="pill-tag">SHOT 02 · INTERIOR ARRIVAL</div>
+          <h2 class="hero-title">
+            GLIDING INTO<br>
+            <span class="text-gradient">THE MASTER SUITE</span>
+          </h2>
+          <p class="hero-desc">
+            Moving forward across the glowing infinity waters, past the poolside loungers, and entering directly into the oceanfront master bedroom sanctuary.
+          </p>
+          <div class="scroll-cue">
+            <span class="scroll-line"></span>
+            <span class="scroll-label">SCROLL TO COMPLETE SUITE ARRIVAL</span>
+          </div>
+        </div>
+
+        <div class="story-overlay overlay-stage-2" id="shot2-overlay-2">
+          <div class="info-panel">
+            <span class="panel-num">02 / POOL TERRACE GLIDE</span>
+            <h3 class="panel-title">Zero-Edge Water Reflection</h3>
+            <p class="panel-body">
+              Skimming past submerged cocktail seating and heated mineral salt waters directly towards the private master suite terrace.
+            </p>
+            <div class="metric-row">
+              <div class="metric-item">
+                <span class="metric-val">HEATED</span>
+                <span class="metric-sub">Salt Water</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">DIRECT</span>
+                <span class="metric-sub">Terrace Walkout</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="story-overlay overlay-stage-3" id="shot2-overlay-3">
+          <div class="info-panel align-right">
+            <span class="panel-num">02 / PRIMARY OCEAN SANCTUARY</span>
+            <h3 class="panel-title">Inside The Master Bedroom</h3>
+            <p class="panel-body">
+              Floor-to-ceiling panoramic glass doors opening to the Pacific surf. Hand-carved solid teak platform bed, deep soaking bath, and sunrise views.
+            </p>
+            <div class="metric-row">
+              <div class="metric-item">
+                <span class="metric-val">4</span>
+                <span class="metric-sub">King En-Suites</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">5,400</span>
+                <span class="metric-sub">Sq. Ft. Living</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val">10</span>
+                <span class="metric-sub">Guest Capacity</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 3: CURATED ESTATE SERVICES & EXPERIENCES              -->
+    <!-- Bespoke private culinary, spa, ocean charters, & chauffeur    -->
+    <!-- ============================================================== -->
+    <section class="section-services" id="services">
+      <div class="container">
+        <div class="section-head text-center-custom">
+          <span class="eyebrow">BESPOKE RESIDENCE HOSPITALITY</span>
+          <h2 class="section-heading">Curated Estate Services</h2>
+          <p class="section-sub margin-auto">
+            Every stay at Villa Solaria is tailored exclusively around your party. From private culinary direction to offshore marine expeditions and in-villa restorative wellness.
+          </p>
+        </div>
+
+        <div class="services-cards-grid">
+          <!-- Service Card 1: Gastronomy -->
+          <div class="service-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/estate-day.jpg" alt="Private Chef & Dining" loading="lazy" />
+              <div class="sc-badge">MICHELIN CALIBER</div>
+            </div>
+            <div class="sc-content">
+              <span class="sc-category">CULINARY EXCELLENCE</span>
+              <h3>Private Executive Chef & Cellar</h3>
+              <p>Tailored daily dining featuring fresh-caught Pacific yellowfin, local organic estate herbs, and sommelier-curated sunset wine pairings on the pool cantilever.</p>
+              <ul class="sc-features">
+                <li>Customized Daily Tasting Menus</li>
+                <li>Sunrise Clifftop Champagne Breakfast</li>
+                <li>Rare Vintage Wine & Mezcal Cellar</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service Card 2: Clifftop Spa -->
+          <div class="service-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/suite-bath.jpg" alt="Clifftop Wellness & Spa" loading="lazy" />
+              <div class="sc-badge">RESTORATIVE</div>
+            </div>
+            <div class="sc-content">
+              <span class="sc-category">WELLNESS & MINDFULNESS</span>
+              <h3>Clifftop Sound & Mineral Spa</h3>
+              <p>Rejuvenate over crashing Pacific surf with private morning yoga instruction, Tibetan sound frequency baths, and deep-tissue botanical massage therapy.</p>
+              <ul class="sc-features">
+                <li>Cantilever Sunrise Yoga Sessions</li>
+                <li>Submerged Infinity Mineral Soaks</li>
+                <li>In-Suite Organic Herbal Body Work</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service Card 3: Chauffeur & Helipad -->
+          <div class="service-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/aerial-estate.jpg" alt="Aviation & Chauffeur Logistics" loading="lazy" />
+              <div class="sc-badge">AIR & ROAD</div>
+            </div>
+            <div class="sc-content">
+              <span class="sc-category">TRANSIT & LOGISTICS</span>
+              <h3>Private Chauffeur & Helipad Access</h3>
+              <p>Effortless arrival via dedicated airport Range Rover escort or direct landing at the clifftop helipad coordinates. On-call private driver throughout your stay.</p>
+              <ul class="sc-features">
+                <li>Direct Helipad Landing Clearance</li>
+                <li>Range Rover Autobiography On-Call</li>
+                <li>VIP Tarmac Clearance & Escort</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Service Card 4: Marine Expeditions -->
+          <div class="service-card">
+            <div class="sc-img-wrap">
+              <img src="/assets/infinity-dusk.jpg" alt="Pacific Ocean Expeditions" loading="lazy" />
+              <div class="sc-badge">PRIVATE MARITIME</div>
+            </div>
+            <div class="sc-content">
+              <span class="sc-category">OCEAN EXPEDITIONS</span>
+              <h3>60ft Catamaran Day Charters</h3>
+              <p>Board our partner 60-foot luxury power catamaran from a private secluded cove for guided sunset dolphin watching, Seabob diving, and hidden beach picnics.</p>
+              <ul class="sc-features">
+                <li>Secluded Cove Anchorages & SUPs</li>
+                <li>Chef-Prepared Offshore Seafood Feast</li>
+                <li>Certified Private Coastal Surf Guide</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 4: THE ESTATE SPACES (REAL VILLA FEATURES)            -->
+    <!-- Unlocked after Shot 1 and Shot 2 animations finish             -->
+    <!-- ============================================================== -->
+    <section class="section-spaces" id="spaces">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">ESTATE LAYOUT & SPACES</span>
+          <h2 class="section-heading">Designed for Complete Solitude</h2>
+          <p class="section-sub">
+            Villa Solaria is leased exclusively as an entire private compound. Every space was positioned to capture morning daylight, evening sunsets, and clean sea air.
+          </p>
+        </div>
+
+        <div class="spaces-showcase-grid">
+          <!-- Space 1: Primary Suite -->
+          <div class="space-item large">
+            <div class="space-image-wrapper">
+              <img src="/assets/suite-bedroom.jpg" alt="Primary Ocean Suite" loading="lazy" />
+              <div class="space-hover-gradient"></div>
+            </div>
+            <div class="space-details">
+              <span class="space-tag">PRIMARY SUITE</span>
+              <h3>The Oceanfront Master Suite</h3>
+              <p>Hand-crafted teak king platform bed, motorized floor-to-ceiling glass sliding doors, private sunrise viewing terrace, and dedicated writing desk.</p>
+              <div class="space-specs">
+                <span>King Bed</span>
+                <span>En-Suite Bath</span>
+                <span>Ocean Terrace</span>
+                <span>AC & Fans</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Space 2: Cantilevered Pool -->
+          <div class="space-item">
+            <div class="space-image-wrapper">
+              <img src="/assets/sunset-loungers.jpg" alt="Poolside Sun Loungers" loading="lazy" />
+              <div class="space-hover-gradient"></div>
+            </div>
+            <div class="space-details">
+              <span class="space-tag">THE TERRACE</span>
+              <h3>20m Cantilevered Pool</h3>
+              <p>Heated mineral salt infinity pool hovering 300ft above breaking waves. Features submerged bar stools and wide travertine daybed decks.</p>
+            </div>
+          </div>
+
+          <!-- Space 3: Ocean Soaking Bath -->
+          <div class="space-item">
+            <div class="space-image-wrapper">
+              <img src="/assets/suite-bath.jpg" alt="Master Bathroom Tub" loading="lazy" />
+              <div class="space-hover-gradient"></div>
+            </div>
+            <div class="space-details">
+              <span class="space-tag">BATHROOM SANCTUARY</span>
+              <h3>Deep Soaking Ocean Bath</h3>
+              <p>Cast ceramic soaking tub positioned directly against the oceanfront window. Finished in natural slate with dual walk-in rainfall showers.</p>
+            </div>
+          </div>
+
+          <!-- Space 4: Games & Entertainment Lounge -->
+          <div class="space-item">
+            <div class="space-image-wrapper">
+              <img src="/assets/games-lounge.jpg" alt="Billiards and Table Tennis Lounge" loading="lazy" />
+              <div class="space-hover-gradient"></div>
+            </div>
+            <div class="space-details">
+              <span class="space-tag">ENTERTAINMENT</span>
+              <h3>Private Recreation Parlor</h3>
+              <p>Tournament-spec table tennis, custom mahogany billiards table, foosball, and plush leather reclining cinema lounges.</p>
+            </div>
+          </div>
+
+          <!-- Space 5: Sunset Edge -->
+          <div class="space-item">
+            <div class="space-image-wrapper">
+              <img src="/assets/infinity-dusk.jpg" alt="Couple in infinity pool at dusk" loading="lazy" />
+              <div class="space-hover-gradient"></div>
+            </div>
+            <div class="space-details">
+              <span class="space-tag">DUSK VISTA</span>
+              <h3>Pacific Sunset Deck</h3>
+              <p>The western promontory catches the full spectrum of dusk. Zero light pollution allows stellar stargazing once evening falls.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 5: ARCHITECTURAL SPECIFICATIONS MATRIX                -->
+    <!-- Redesigned with metric highlights & 4 architectural pillars    -->
+    <!-- ============================================================== -->
+    <section class="section-specs" id="specs">
+      <div class="container">
+        <div class="specs-box-modern">
+          <!-- Top Architectural Metric Callouts -->
+          <div class="specs-metrics-bar">
+            <div class="sm-card">
+              <span class="sm-value">300<small>FT</small></span>
+              <span class="sm-title">Ocean Elevation</span>
+              <span class="sm-sub">Sheer basalt cliff promontory</span>
+            </div>
+            <div class="sm-card">
+              <span class="sm-value">5,400<small>SQ.FT</small></span>
+              <span class="sm-title">Interior Living</span>
+              <span class="sm-sub">Climate-controlled sanctuary</span>
+            </div>
+            <div class="sm-card">
+              <span class="sm-value">4.5<small>ACRES</small></span>
+              <span class="sm-title">Private Gated Estate</span>
+              <span class="sm-sub">100% ocean-facing privacy</span>
+            </div>
+            <div class="sm-card">
+              <span class="sm-value">20<small>METERS</small></span>
+              <span class="sm-title">Heated Mineral Pool</span>
+              <span class="sm-sub">Zero-edge Pacific infinity</span>
+            </div>
+          </div>
+
+          <!-- Specs Header -->
+          <div class="specs-modern-header">
+            <div>
+              <span class="eyebrow">ARCHITECTURAL DOSSIER</span>
+              <h2 class="section-heading">Estate Specifications Matrix</h2>
+            </div>
+            <div class="specs-pricing-badge">
+              <span class="spb-label">EXCLUSIVE BUYOUT</span>
+              <span class="spb-price">$1,850 <small>/ NIGHT</small></span>
+              <span class="spb-note">Full 4-Bedroom Estate & Grounds</span>
+            </div>
+          </div>
+
+          <!-- 4 Architectural Pillars Grid -->
+          <div class="specs-pillars-grid">
+            <!-- Pillar 1 -->
+            <div class="pillar-card">
+              <div class="pillar-head">
+                <span class="pillar-num">01</span>
+                <h3>Structure & Materials</h3>
+              </div>
+              <ul class="pillar-list">
+                <li><strong>Cast Concrete & Basalt:</strong> Built directly into the ancient headland cliff with seismic reinforcement.</li>
+                <li><strong>Motorized Glass:</strong> Floor-to-ceiling Schuco German insulated glass sliders with 99% UV rejection.</li>
+                <li><strong>Natural Surfaces:</strong> Hand-cut Italian travertine terraces and Indonesian solid teak millwork.</li>
+                <li><strong>Cantilever Physics:</strong> Reinforced tension post-stressed beams hovering 20m out over open ocean.</li>
+              </ul>
+            </div>
+
+            <!-- Pillar 2 -->
+            <div class="pillar-card">
+              <div class="pillar-head">
+                <span class="pillar-num">02</span>
+                <h3>Accommodations</h3>
+              </div>
+              <ul class="pillar-list">
+                <li><strong>4 Master King En-Suites:</strong> Every room features unobstructed 180-degree Pacific sunsets.</li>
+                <li><strong>Bathroom Sanctuaries:</strong> Cast deep-soaking bathtubs and indoor/outdoor monsoon rain showers.</li>
+                <li><strong>Bespoke Bedding:</strong> Custom Belgian linen bedding, organic memory foam, and motorized blackout shades.</li>
+                <li><strong>Capacities:</strong> Up to 10 overnight guests with dedicated luggage and dressing wings.</li>
+              </ul>
+            </div>
+
+            <!-- Pillar 3 -->
+            <div class="pillar-card">
+              <div class="pillar-head">
+                <span class="pillar-num">03</span>
+                <h3>Leisure & Recreation</h3>
+              </div>
+              <ul class="pillar-list">
+                <li><strong>20m Mineral Pool:</strong> Heated saline infinity edge with submerged sunken cocktail bar loungers.</li>
+                <li><strong>Recreation Parlor:</strong> Custom tournament mahogany billiards, ping pong, and foosball.</li>
+                <li><strong>Screening Lounge:</strong> 4K laser projection cinema room with reclining Italian leather armchairs.</li>
+                <li><strong>Sunset Fire Decks:</strong> Sunken cliffside firepit lounge with built-in gas radiant heat.</li>
+              </ul>
+            </div>
+
+            <!-- Pillar 4 -->
+            <div class="pillar-card">
+              <div class="pillar-head">
+                <span class="pillar-num">04</span>
+                <h3>Systems & Security</h3>
+              </div>
+              <ul class="pillar-list">
+                <li><strong>Starlink Enterprise:</strong> High-bandwidth 500 Mbps redundant satellite connection across estate.</li>
+                <li><strong>Off-Grid Solar:</strong> 45kW rooftop solar array backed by dual Tesla commercial Powerwall units.</li>
+                <li><strong>Acoustic Multi-Zone:</strong> Concealed Sonos architectural architectural audio through all indoor/outdoor zones.</li>
+                <li><strong>Private Security:</strong> Gated single-road access with 24/7 guarded checkpoint and discreet monitoring.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 6: CURATED VISUAL ARCHIVE                             -->
+    <!-- ============================================================== -->
+    <section class="section-gallery" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">VISUAL ARCHIVE</span>
+          <h2 class="section-heading">Photographic Chronicle</h2>
+          <p class="section-sub">Authentic captures of Villa Solaria throughout morning light, midday radiance, and twilight.</p>
+        </div>
+
+        <div class="gallery-modern-grid">
+          <div class="g-item span-2">
+            <img src="/assets/hero-twilight.jpg" alt="Villa at Twilight" loading="lazy" />
+            <div class="g-caption">Twilight Over the Clifftop Promontory</div>
+          </div>
+          <div class="g-item">
+            <img src="/assets/suite-bedroom.jpg" alt="Primary Suite" loading="lazy" />
+            <div class="g-caption">Primary Oceanfront Bedroom</div>
+          </div>
+          <div class="g-item">
+            <img src="/assets/estate-day.jpg" alt="Lush Hillside Exterior" loading="lazy" />
+            <div class="g-caption">Lush Mountain Ridge & Access Road</div>
+          </div>
+          <div class="g-item">
+            <img src="/assets/sunset-loungers.jpg" alt="Sunset Sunbeds" loading="lazy" />
+            <div class="g-caption">Sunken Loungers & Infinity Edge</div>
+          </div>
+          <div class="g-item">
+            <img src="/assets/suite-bath.jpg" alt="Ocean En-Suite Tub" loading="lazy" />
+            <div class="g-caption">En-Suite Slate Soaking Bath</div>
+          </div>
+          <div class="g-item span-2">
+            <img src="/assets/aerial-estate.jpg" alt="Aerial Peninsula View" loading="lazy" />
+            <div class="g-caption">Coastal Peninsula Footprint & Tide Pools</div>
+          </div>
+          <div class="g-item">
+            <img src="/assets/games-lounge.jpg" alt="Games Parlor" loading="lazy" />
+            <div class="g-caption">Entertainment & Billiards Parlor</div>
+          </div>
+          <div class="g-item">
+            <img src="/assets/infinity-dusk.jpg" alt="Dusk Pool Romance" loading="lazy" />
+            <div class="g-caption">Golden Hour on the Infinity Cantilever</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================== -->
+    <!-- SECTION 7: LUXURY RATES & RESERVATION ENGINE                  -->
+    <!-- Redesigned with transparent buyout tiers & dynamic calculator -->
+    <!-- ============================================================== -->
+    <section class="section-inquire" id="inquire">
+      <div class="container">
+        <div class="inquire-layout">
+          <!-- Left Column: Rates & Estate Inclusions -->
+          <div class="inquire-info">
+            <span class="eyebrow">DIRECT RESIDENCE RESERVATIONS</span>
+            <h2 class="section-heading">Estate Buyout & Inquiries</h2>
+            <div class="gold-line"></div>
+            <p class="inquire-desc">
+              Villa Solaria is offered exclusively as an entire 4-bedroom private estate. We do not accommodate individual room bookings to guarantee absolute seclusion for your party.
+            </p>
+
+            <!-- Transparent Rates Table -->
+            <div class="rate-tiers-card">
+              <div class="rtc-header">
+                <span class="rtc-title">2026 CALENDAR RATES</span>
+                <span class="rtc-note">USD / NIGHT</span>
+              </div>
+              <div class="rtc-row">
+                <div>
+                  <strong>High Season</strong>
+                  <span>Nov 01 – Apr 30</span>
+                </div>
+                <span class="rtc-price">$1,850</span>
+              </div>
+              <div class="rtc-row">
+                <div>
+                  <strong>Holiday Buyout</strong>
+                  <span>Dec 18 – Jan 06</span>
+                </div>
+                <span class="rtc-price">$2,450</span>
+              </div>
+              <div class="rtc-row">
+                <div>
+                  <strong>Green Season</strong>
+                  <span>May 01 – Oct 31</span>
+                </div>
+                <span class="rtc-price">$1,450</span>
+              </div>
+            </div>
+
+            <!-- Inclusions Checklist -->
+            <div class="inclusions-card">
+              <h4>INCLUDED WITH EVERY STAY:</h4>
+              <div class="inc-grid">
+                <span>Dedicated Villa Manager</span>
+                <span>Airport Chauffeur Transfer</span>
+                <span>Daily Housekeeping & Turn-Down</span>
+                <span>Welcome Cellar & Provisions</span>
+                <span>High-Speed Starlink Satellite</span>
+                <span>24/7 Gated Perimeter Security</span>
+              </div>
+            </div>
+
+            <!-- Direct Contact -->
+            <div class="direct-contact-block">
+              <div class="dc-row">
+                <span class="dc-label">ESTATE COORDINATES:</span>
+                <span class="dc-val">15°29'38" N, 73°46'19" E · Clifftop Headland</span>
+              </div>
+              <div class="dc-row">
+                <span class="dc-label">CONCIERGE DESK:</span>
+                <span class="dc-val">+1 (800) 492-7100 · +44 20 7946 0812</span>
+              </div>
+              <div class="dc-row">
+                <span class="dc-label">DIRECT INQUIRIES:</span>
+                <span class="dc-val">reservations@villasolaria.com</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Interactive Reservation Engine -->
+          <div class="inquire-form-card">
+            <div class="ifc-header">
+              <span class="ifc-eyebrow">LIVE AVAILABILITY CALCULATOR</span>
+              <h3>Request Stay Dates</h3>
+              <p class="form-sub">Direct reservation proposals are returned within 1 hour.</p>
+            </div>
+
+            <form id="reservation-form" class="minimal-form">
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="checkin">CHECK-IN DATE *</label>
+                  <input type="date" id="checkin" value="2026-11-12" required />
+                </div>
+                <div class="form-field">
+                  <label for="checkout">CHECK-OUT DATE *</label>
+                  <input type="date" id="checkout" value="2026-11-16" required />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="guests">TOTAL GUEST COUNT</label>
+                  <select id="guests">
+                    <option value="2">2 Guests (Couple Sanctuary)</option>
+                    <option value="4">4 Guests</option>
+                    <option value="6">6 Guests</option>
+                    <option value="8" selected>8 Guests</option>
+                    <option value="10">10 Guests (Max Estate Capacity)</option>
+                  </select>
+                </div>
+                <div class="form-field">
+                  <label for="chef-service">CULINARY DIRECTION</label>
+                  <select id="chef-service">
+                    <option value="none">Self-Catering (Pre-Stocked Pantry)</option>
+                    <option value="breakfast">Breakfast Chef Service (+$150/day)</option>
+                    <option value="full">Full Board Private Executive Chef (+$450/day)</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Live Cost Summary Box -->
+              <div class="cost-calculator-box">
+                <div class="calc-row">
+                  <span id="calc-nights-label">4 Nights × $1,850</span>
+                  <span id="calc-stay-total">$7,400</span>
+                </div>
+                <div class="calc-row">
+                  <span>Refundable Clifftop Security Deposit</span>
+                  <span>$1,000</span>
+                </div>
+                <div class="calc-row">
+                  <span>Dedicated Staff & Daily Turn-Down</span>
+                  <span class="highlight-included">Included</span>
+                </div>
+                <div class="calc-divider"></div>
+                <div class="calc-total-row">
+                  <span>ESTIMATED STAY TOTAL:</span>
+                  <strong id="calc-grand-total">$8,400 USD</strong>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label for="guest-name">LEAD GUEST NAME *</label>
+                  <input type="text" id="guest-name" placeholder="Lord / Lady / Dr. / Full Name" required />
+                </div>
+                <div class="form-field">
+                  <label for="guest-email">CONFIDENTIAL EMAIL *</label>
+                  <input type="email" id="guest-email" placeholder="contact@privateoffice.com" required />
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label for="guest-phone">WHATSAPP / MOBILE PHONE (WITH COUNTRY CODE)</label>
+                <input type="tel" id="guest-phone" placeholder="+1 (555) 234-5678" />
+              </div>
+
+              <div class="form-field">
+                <label for="guest-notes">BESPOKE REQUESTS (HELIPAD, DIETARY, RETREAT)</label>
+                <textarea id="guest-notes" rows="3" placeholder="Specify any flight numbers, private jet tail numbers, dietary preferences, or private excursions..."></textarea>
+              </div>
+
+              <button type="submit" class="btn-submit-inquiry">
+                <span>TRANSMIT RESERVATION REQUEST</span>
+                <span>→</span>
+              </button>
+
+              <div id="form-feedback" class="form-feedback-text"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Minimalist Clean Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-left">
+        <span class="f-logo">VILLA SOLARIA</span>
+        <p>A private architectural oceanfront sanctuary perched 300ft above the Pacific surf. All rights reserved © 2026.</p>
+      </div>
+      <div class="footer-right">
+        <div class="f-coords">15°29'38" N · 73°46'19" E · PACIFIC RIDGE</div>
+        <div class="f-links">
+          <a href="#shot1-section">Descent</a>
+          <a href="#shot2-section">Arrival</a>
+          <a href="#services">Services</a>
+          <a href="#spaces">The Villa</a>
+          <a href="#specs">Specifications</a>
+          <a href="#inquire">Inquire</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Confirmation Modal (Clean architectural styling, zero gemini icons) -->
+  <div id="confirm-modal" class="modal-backdrop">
+    <div class="modal-box">
+      <button class="modal-x" id="modal-close-x" aria-label="Close modal">✕</button>
+      <div class="modal-badge">RESERVATION INQUIRY REGISTERED</div>
+      <h2>Stay Request Received</h2>
+      <p>Thank you, <strong id="conf-name">Valued Guest</strong>. Your reservation dates for Villa Solaria have been securely transmitted to our private estate office.</p>
+      
+      <div class="modal-ledger">
+        <div class="m-row">
+          <span>Requested Dates:</span>
+          <strong id="conf-dates">Nov 12 – Nov 16, 2026</strong>
+        </div>
+        <div class="m-row">
+          <span>Duration:</span>
+          <strong id="conf-nights">4 Nights</strong>
+        </div>
+        <div class="m-row">
+          <span>Estimated Total:</span>
+          <strong id="conf-total" class="highlight-text">$8,400 USD</strong>
+        </div>
+      </div>
+
+      <p class="modal-foot">A private proposal detailing deposit escrow and chauffeur coordination will be dispatched to your email within 1 hour.</p>
+      <button class="btn-modal-done" id="modal-done-btn">RETURN TO ESTATE</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
