@@ -360,11 +360,27 @@ function initNavigation() {
     }
   });
 
-  toggle?.addEventListener('click', () => drawer?.classList.add('open'));
-  closeBtn?.addEventListener('click', () => drawer?.classList.remove('open'));
+  function openDrawer() {
+    drawer?.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    drawer?.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  toggle?.addEventListener('click', openDrawer);
+  closeBtn?.addEventListener('click', closeDrawer);
 
   drawerLinks.forEach((link) => {
-    link.addEventListener('click', () => drawer?.classList.remove('open'));
+    link.addEventListener('click', closeDrawer);
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && drawer?.classList.contains('open')) {
+      closeDrawer();
+    }
   });
 
   // Anchor links smooth navigation
@@ -393,6 +409,10 @@ window.addEventListener('DOMContentLoaded', () => {
   ScrollTrigger.refresh();
 });
 
+let lastWidth = window.innerWidth;
 window.addEventListener('resize', () => {
-  ScrollTrigger.refresh();
+  if (window.innerWidth !== lastWidth) {
+    lastWidth = window.innerWidth;
+    ScrollTrigger.refresh();
+  }
 });
